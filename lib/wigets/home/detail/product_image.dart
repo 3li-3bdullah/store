@@ -1,7 +1,4 @@
-// ignore_for_file: unused_import, prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../../constants.dart';
 
@@ -19,14 +16,14 @@ class ProductImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.symmetric(horizontal: kDefultPadding),
+      margin: const EdgeInsets.symmetric(horizontal: kDefultPadding),
       height: size.width * 0.8,
       child: Stack(alignment: Alignment.bottomCenter, children: [
         Container(
           height: size.width * 0.7,
           width: size.width * 0.7,
           decoration:
-              BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+              const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
         ),
         Image.asset(
           image!,

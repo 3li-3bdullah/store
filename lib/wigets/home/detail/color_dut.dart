@@ -1,5 +1,3 @@
-// ignore_for_file: unused_import, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -13,8 +11,8 @@ class ColorDot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: kDefultPadding / 2.5),
-      padding: EdgeInsets.all(3.0),
+      margin: const EdgeInsets.symmetric(horizontal: kDefultPadding / 2.5),
+      padding: const EdgeInsets.all(3.0),
       height: 24.0,
       width: 24.0,
       decoration: BoxDecoration(
