@@ -23,7 +23,9 @@ class ProductCard extends StatelessWidget {
           horizontal: kDefultPadding, vertical: kDefultPadding / 2),
       height: 190,
       child: InkWell(
-        onTap: press(),
+        onTap: () {
+          press();
+        },
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
