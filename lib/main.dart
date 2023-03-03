@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, unused_import, avoid_web_libraries_in_flutter
-
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'screens/home_screen.dart';
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Electrical store',
       theme: ThemeData(primarySwatch: Colors.blue, primaryColor: kPrimaryColor),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
