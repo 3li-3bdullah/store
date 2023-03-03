@@ -1,5 +1,3 @@
-// ignore_for_file: unused_import, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/modles/products.dart';
 
