@@ -1,8 +1,5 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable, avoid_web_libraries_in_flutter, unused_import, prefer_const_constructors_in_immutables, unused_local_variable, unnecessary_string_escapes
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import '../constants.dart';
 import '../controller/controller.dart';
 import '../screens/detail_screen.dart';
@@ -16,13 +13,13 @@ class HomeBody extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          SizedBox(height: kDefultPadding / 2),
+          const SizedBox(height: kDefultPadding / 2),
           Expanded(
               child: Stack(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 70),
-                decoration: BoxDecoration(
+                margin: const EdgeInsets.only(top: 70),
+                decoration: const BoxDecoration(
                     color: kBackgroundcolor,
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(40),

@@ -1,11 +1,9 @@
-// ignore_for_file: prefer_const_constructors, unused_import
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/modles/products.dart';
 import 'package:get/get.dart';
+
 import '../constants.dart';
 import '../controller/controller.dart';
-import '../screens/detail_screen.dart';
 
 class ProductCard extends StatelessWidget {
   ProductCard({
@@ -72,7 +70,7 @@ class ProductCard extends StatelessWidget {
                               horizontal: kDefultPadding),
                           child: Text(
                             productsData.title!,
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
                         const Spacer(),
