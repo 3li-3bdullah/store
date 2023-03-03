@@ -8,6 +8,7 @@ import '../view/product_card.dart';
 class HomeBody extends StatelessWidget {
   HomeBody({super.key});
   final ProductController c = Get.put(ProductController());
+  final controller = Get.find<ProductController>();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -30,7 +31,7 @@ class HomeBody extends StatelessWidget {
                 itemBuilder: (context, index) => ProductCard(
                   productsData: c.listProduct[index],
                   press: () {
-                    Get.to(DetailsScreen(productsData: c.listProduct[index]));
+                   Get.to( () => DetailsScreen(productsData: controller.listProduct[index]));
                   },
                 ),
               )
